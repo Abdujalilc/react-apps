@@ -9,17 +9,13 @@ export function Counter() {
 
   return (
     <>
-      <div >
         <button onClick={() => dispatch(increment())} > + </button> &nbsp;
         <span>{count}</span> 
-      </div>
       <br />
-      <div>
         <input value={incrementAmount} onChange={e => setIncrementAmount(e.target.value)} /><br /><br />
         <button onClick={() => dispatch(incrementByAmount(Number(incrementAmount) || 0))} >
           Add Amount
         </button>
-      </div>
     </>
   );
 }
