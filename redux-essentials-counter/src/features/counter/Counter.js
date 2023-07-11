@@ -19,3 +19,9 @@ export function Counter() {
     </>
   );
 }
+/*
+dispatch(increment()) --> calling increment method without action payload
+dispatch(incrementByAmount(Number(incrementAmount) || 0)) --> calling increment method with action payload
+
+setIncrementAmount(e.target.value) --> changing incrementAmount value in state
+*/
