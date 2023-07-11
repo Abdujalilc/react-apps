@@ -1,0 +1,31 @@
+import { configureStore } from '@reduxjs/toolkit';
+import counterReducer from '../features/counter/counterSlice';
+
+export default configureStore({
+  reducer: {
+    counter: counterReducer,
+  },
+});
+
+
+-------------------------------------
+
+
+import { createSlice } from '@reduxjs/toolkit'
+export const counterSlice = createSlice({
+  ...
+})
+
+export default counterSlice.reducer
+
+-------------------------------------
+
+import { useSelector, useDispatch } from 'react-redux';
+
+//get state value
+const count = useSelector(selectCount);
+
+//change state value
+const dispatch = useDispatch();
+
+

@@ -1,0 +1,13 @@
+createSlice() returns:
+-actions
+-caseReducers
+-getInitialState
+-name
+-reducer
+
+---------------------------
+
+createSlice parameters:
+-name
+-initialState
+-reducers

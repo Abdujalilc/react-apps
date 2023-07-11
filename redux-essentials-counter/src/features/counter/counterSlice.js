@@ -15,7 +15,7 @@ export const counterSlice = createSlice({
   },
 })
 
-//these are reducers methods
+//these are reducer's methods
 export const { increment, incrementByAmount } = counterSlice.actions
 //getting value from state
 export const selectCount = (state) => state.counter.value
