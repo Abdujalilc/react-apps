@@ -9,7 +9,7 @@ const App = () => {
   const posts = useSelector((state) => state.postReducer)
   return (
       <div>
-        <h1>Extreme</h1>
+        <h1>Extreme Discussion</h1>
         <PostForm/>
         <div className="content">
           <div className="post-container">
