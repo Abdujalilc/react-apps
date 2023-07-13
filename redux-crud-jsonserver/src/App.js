@@ -7,15 +7,12 @@ import {isEmpty} from "./components/Utils";
 
 const App = () => {
   const posts = useSelector((state) => state.postReducer)
-  // console.log(posts)
-
   return (
       <div>
         <h1>Extreme</h1>
         <PostForm/>
         <div className="content">
           <div className="post-container">
-            {/*On vérifie si posts n'est pas vide alors on peut mapper*/}
             {!isEmpty(posts) && posts.map((post, index) => <Post post={post} key={index}/>)}
           </div>
           <User/>

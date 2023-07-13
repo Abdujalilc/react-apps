@@ -3,7 +3,6 @@ import userReducer from "./user.reducer";
 import postReducer from "./post.reducer";
 
 export default combineReducers({
-  // On combine tous les REDUCERS
   userReducer,
   postReducer,
 })

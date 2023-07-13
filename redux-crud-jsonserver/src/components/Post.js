@@ -22,7 +22,6 @@ const Post = ({post}) => {
     }
 
     dispatch(editPost(postData))
-    // Une fois édité, il faut que le textarea repasse à p
     setEditToggle(false)
   }
 

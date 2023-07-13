@@ -2,31 +2,27 @@
 
 npm i -s redux react-redux @reduxjs/toolkit @redux-devtools/extension
 
-Télécharger Redux DevTools
+Download Redux DevTools
 
-1- Provider qui englobe l'app
+1- Provider that wraps the app
+2- Creation store
+3- Creation reducers
+4- Creation actions
 
-2- Création store
+-----------------------
 
-3- Création reducers
-
-4- Création actions
-
----
 ** JSON-SERVER **
-
-
 npm i -g json-server
 "json-server --w db.json" 
 
 || "npm run server"
 
----
-** axios **
+-----------------------
 
+** axios **
 npm i axios
 
----
-** SASS **
+-----------------------
 
+** SASS **
 npm i sass
