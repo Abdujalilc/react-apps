@@ -9,29 +9,23 @@ const PostForm = () => {
 
   const handleForm = async (e) => {
     e.preventDefault();
-
     // console.log(form)
-
     const postData = {
       author: user.pseudo,
       title: form.current[0].value,
       content: form.current[1].value,
       likes: 0
     }
-
-    // Faire une action avec dispatch pour envoyer dans le store
     await dispatch(addPost(postData))
     dispatch(getPosts())
-    // Mettre le formulaire à zéro
     form.current.reset();
   }
-
   return (
     <div className="form-container">
       <form ref={form} onSubmit={e => handleForm(e)}>
-        <input type="text" placeholder="Titre du poste" />
-        <textarea placeholder="Postez vos pensées..."></textarea>
-        <input type="submit" value="Envoyer" />
+        <input type="text" placeholder="Position Title" />
+        <textarea placeholder="Post your thoughts..."></textarea>
+        <input type="submit" value="Send" />
       </form>
     </div>
   );

@@ -53,7 +53,7 @@ const Post = ({post}) => {
             <form onSubmit={e => handleEdit(e)}>
               <textarea autoFocus={true} defaultValue={post.content}
                         onChange={e => setEditContent(e.target.value)}></textarea>
-              <input type="submit" value="Valider modification"/>
+              <input type="submit" value="Validate modification"/>
             </form>
         ) : (
             <p>{post.content}</p>

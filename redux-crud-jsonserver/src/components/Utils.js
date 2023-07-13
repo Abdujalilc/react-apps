@@ -1,4 +1,4 @@
-// Fonction qui vérifie si la variable est vide
+// Function that checks if the variable is empty
 export const isEmpty = (value) => {
   return (
     value === undefined ||

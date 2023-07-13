@@ -1,4 +1,4 @@
-// State manager pour gérer les états
+// State manager to manage states
 import {GET_USER} from "../actions/user.action";
 import {ADD_USER_LIKE} from "../actions/user.action";
 
