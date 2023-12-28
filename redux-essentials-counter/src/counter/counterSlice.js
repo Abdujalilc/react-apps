@@ -1,7 +1,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 //createSlice - very important method with multiple return properties
-export const counterSlice = createSlice({
+export const counterSlice = createSlice({// returns interface Slice
   name: 'counter',
   initialState: {
     value: 0,
@@ -19,8 +19,20 @@ export const counterSlice = createSlice({
 //these are reducer's methods
 export const { increment, incrementByAmount } = counterSlice.actions
 
-//getting value from state
+//getting value from state by name. // name: 'counter'
+//const count = useSelector(selectCount); // called like this
+//const count = useSelector((state) => state.counter.value); // could be called like this
 export const selectCount = (state) => state.counter.value
 
 //exporting reducer from slice
 export default counterSlice.reducer
+
+/*
+export interface Slice {
+  name: Name;
+  reducer: Reducer<State>;
+  actions: CaseReducerActions<CaseReducers, Name>;
+  caseReducers: SliceDefinedCaseReducers<CaseReducers>;
+  getInitialState: () => State;
+}
+*/
