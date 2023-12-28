@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit'
 
+//createSlice - very important method with multiple return properties
 export const counterSlice = createSlice({
   name: 'counter',
   initialState: {
@@ -17,7 +18,9 @@ export const counterSlice = createSlice({
 
 //these are reducer's methods
 export const { increment, incrementByAmount } = counterSlice.actions
+
 //getting value from state
 export const selectCount = (state) => state.counter.value
+
 //exporting reducer from slice
 export default counterSlice.reducer
