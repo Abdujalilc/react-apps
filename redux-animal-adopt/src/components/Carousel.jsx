@@ -13,7 +13,6 @@ function Carousel(props) {
       <img src={images[active]} alt="animal" />
       <div className="carousel-smaller">
         {images.map((photo, index) => (
-          // eslint-disable-next-line
           <img
             key={photo}
             src={photo}
