@@ -17,7 +17,7 @@ export function Counter() {
 
       <span>{count}</span>
       <br /><br />
-
+      {/* when change input value, incrementAmount will be changed by setIncrementAmount method*/}
       <input value={incrementAmount} onChange={e => setIncrementAmount(e.target.value)} /><br /><br />
 
       {/* reducers: { incrementByAmount: (state, action) => { state.value += action.payload }, } */}
