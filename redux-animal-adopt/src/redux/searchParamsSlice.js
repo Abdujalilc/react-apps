@@ -10,12 +10,12 @@ export const searchParamsSlice = createSlice({
     },
   },
   reducers: {
-    all: (state, action) => {
+    setLocationAnimalBreed: (state, action) => {
       state.value = action.payload;
     },
   },
 });
 
-export const { all } = searchParamsSlice.actions;
+export const { setLocationAnimalBreed } = searchParamsSlice.actions;
 
 export default searchParamsSlice.reducer;

@@ -1,0 +1,14 @@
+{
+  "animal": "cat",
+  "breeds": [
+    "American Shorthair",
+    "American Longhair",
+    "British Shorthair",
+    "Domestic Shorthair",
+    "Tabby",
+    "Siamese",
+    "Maine Coon",
+    "Cornish Rex",
+    "Chartreux"
+  ]
+}

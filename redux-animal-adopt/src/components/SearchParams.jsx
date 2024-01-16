@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { all } from "../redux/searchParamsSlice";
+import { setLocationAnimalBreed } from "../redux/searchParamsSlice";
 import Results from "./Results";
 import useBreedList from "../services/useBreedList";
 import { useSearchQuery } from "../services/petApiService";
@@ -27,7 +27,7 @@ const SearchParams = () => {
             breed: formData.get("breed") ?? "",
             location: formData.get("location") ?? "",
           };
-          dispatch(all(obj));
+          dispatch(setLocationAnimalBreed(obj));
         }}
       >
         {adoptedPet ? (
