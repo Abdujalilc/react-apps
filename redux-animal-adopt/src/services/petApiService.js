@@ -23,3 +23,4 @@ export const petApi = createApi({
 });
 
 export const { useGetBreedsQuery, useGetPetQuery, useSearchQuery } = petApi;
+//getBreeds,getPet,search

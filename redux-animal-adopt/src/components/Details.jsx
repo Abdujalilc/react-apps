@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { adopt } from "./adoptedPetSlice";
 import Modal from "./Modal";
-import ErrorBoundary from "./ErrorBoundary";
+import ErrorBoundary from "./components/ErrorBoundary";
 import Carousel from "./Carousel";
 import { useGetPetQuery } from "./petApiService";
 
