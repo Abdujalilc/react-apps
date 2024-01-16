@@ -1,11 +1,11 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { adopt } from "./adoptedPetSlice";
+import { adopt } from "../redux/adoptedPetSlice";
 import Modal from "./Modal";
-import ErrorBoundary from "./components/ErrorBoundary";
+import ErrorBoundary from "./ErrorBoundary";
 import Carousel from "./Carousel";
-import { useGetPetQuery } from "./petApiService";
+import { useGetPetQuery } from "../services/petApiService";
 
 const Details = () => {
   const { id } = useParams();

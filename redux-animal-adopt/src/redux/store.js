@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import adoptedPet from "./adoptedPetSlice";
 import searchParams from "./searchParamsSlice";
-import { petApi } from "./petApiService";
+import { petApi } from "../services/petApiService";
 
 const store = configureStore({
   reducer: {
