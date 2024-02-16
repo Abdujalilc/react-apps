@@ -1,34 +1,39 @@
 import React from "react";
-import {useDispatch, useSelector} from "react-redux";
-import {addPostLike} from "../actions/post.action";
-import {addUserLike} from "../actions/user.action";
+import { useDispatch, useSelector } from "react-redux";
+import { addPostLike } from "../actions/post.action";
+import { addUserLike } from "../actions/user.action";
 
 const Like = ({ post }) => {
-  const dispatch = useDispatch()
-  const user = useSelector((state) => state.userReducer)
+  const dispatch = useDispatch();
+  const user = useSelector((state) => state.userReducer);
   const handleLike = () => {
     const postData = {
       title: post.title,
       author: post.author,
       content: post.content,
       id: post.id,
-      likes: post.likes + 1
-    }
+      likes: post.likes + 1,
+    };
 
     const userData = {
       pseudo: user.pseudo,
       likes: user.likes + 1,
       age: user.age,
-      id: user.id
-    }
+      id: user.id,
+    };
 
-    dispatch(addPostLike(postData))
-    dispatch(addUserLike(userData))
-  }
+    dispatch(addPostLike(postData));
+    dispatch(addUserLike(userData));
+  };
 
   return (
     <div>
-      <img onClick={() => handleLike()} src="./icons/clap.png" className="clap" alt="clap" />
+      <img
+        onClick={() => handleLike()}
+        src="./icons/clap.png"
+        className="clap"
+        alt="clap"
+      />
       <span>{post.likes}</span>
     </div>
   );

@@ -1,4 +1,7 @@
-****\*\*\*\*****STARTING APP****\*\*\*****
+\***\*\*\*\*\*\*\***STARTING APP\***\*\*\*\*\*\***
+"start": "concurrently \"json-server --w db.json\" \"set PORT=3001 && react-scripts start\"",
+
+||
 
 1. npm run server(automatically start with 3000 port)
 2. npm start(asks to start with 3001 port)

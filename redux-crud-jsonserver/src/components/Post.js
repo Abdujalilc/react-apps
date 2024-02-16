@@ -7,24 +7,24 @@ import myImage from "../assets/253-1500x400.jpg";
 
 const Post = ({ post }) => {
   const [editToggle, setEditToggle] = useState(false);
-  const user = useSelector((state) => state.userReducer)
-  const [editContent, setEditContent] = useState(post.content)
-  const dispatch = useDispatch()
+  const user = useSelector((state) => state.userReducer);
+  const [editContent, setEditContent] = useState(post.content);
+  const dispatch = useDispatch();
 
   const handleEdit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     const postData = {
       title: post.title,
       author: user.pseudo,
       likes: post.likes,
       id: post.id,
-      content: editContent
-    }
+      content: editContent,
+    };
 
-    dispatch(editPost(postData))
-    setEditToggle(false)
-  }
+    dispatch(editPost(postData));
+    setEditToggle(false);
+  };
 
   return (
     <div className="post">
@@ -44,16 +44,15 @@ const Post = ({ post }) => {
       )}
 
       <h2>{post.title}</h2>
-      <img
-        src={myImage}
-        className="post-img"
-        alt="img-post"
-      />
+      <img src={myImage} className="post-img" alt="img-post" />
 
       {editToggle ? (
-        <form onSubmit={e => handleEdit(e)}>
-          <textarea autoFocus={true} defaultValue={post.content}
-            onChange={e => setEditContent(e.target.value)}></textarea>
+        <form onSubmit={(e) => handleEdit(e)}>
+          <textarea
+            autoFocus={true}
+            defaultValue={post.content}
+            onChange={(e) => setEditContent(e.target.value)}
+          ></textarea>
           <input type="submit" value="Validate modification" />
         </form>
       ) : (

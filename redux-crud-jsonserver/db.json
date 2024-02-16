@@ -12,20 +12,20 @@
       "author": "Samia",
       "content": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptates non, odit, sequi sit pariatur iusto modi magni dolorem, cupiditate corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptates non, odit, sequi sit pariatur iusto modi magni dolorem, cupiditate corrupti! Recusandae quaerat vitae fugiat mollitia blanditiis, temporibus eum! Ipsum? Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptates non, odit, sequi sit pariatur iusto modi magni dolorem, cupiditate corrupti! Recusandae quaerat vitae fugiat mollitia blanditiis, temporibus eum! Ipsum?",
       "id": "2",
-      "likes": 10
+      "likes": 11
     },
     {
-      "title": "manager",
+      "title": "Teacher",
       "author": "user42",
-      "content": "some thoughts",
-      "id": "f1IAZTz",
-      "likes": 5
+      "content": "Be ready",
+      "id": "L9V6bqQ",
+      "likes": 3
     }
   ],
   "user": [
     {
       "pseudo": "user42",
-      "likes": 54,
+      "likes": 58,
       "age": 30,
       "id": 1
     }
