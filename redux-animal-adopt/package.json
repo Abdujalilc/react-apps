@@ -1,6 +1,5 @@
 {
-  "name": "citr-v8-project",
-  "version": "8.0.0",
+  "name": "redux-animal-adopt",
   "description": "React redux query ...",
   "main": "index.js",
   "scripts": {

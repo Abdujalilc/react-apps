@@ -1,6 +1,5 @@
 {
   "name": "redux-essentials-counter-example",
-  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@reduxjs/toolkit": "^1.4.0",
