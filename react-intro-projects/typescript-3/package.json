@@ -29,7 +29,7 @@
   ],
   "license" : "ISC",
   "main" : "index.js",
-  "name" : "citr-v8-project",
+  "name" : "react-intro-project",
   "scripts" : {
     "build" : "vite build",
     "dev" : "vite",
