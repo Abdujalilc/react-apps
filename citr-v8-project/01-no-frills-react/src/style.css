@@ -5,7 +5,7 @@
 
 body {
   background-color: #81a69b;
-  background-image: url(http://pets-images.dev-apis.com/pets/wallpaperB.jpg);
+  background-image: radial-gradient(#3a3a3a 30%, #121212 100%);
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -90,9 +90,9 @@ body {
 header > a,
 #root > div > h1 {
   display: inline-block;
-  background-image: url(http://static.frontendmasters.com/resources/2019-05-02-complete-intro-react-v5/image-logo.png);
+  background-image: url(../../adopt_me.png);
   filter: brightness(150%);
-  width: 279px;
+  width: 353px;
   height: 76px;
   overflow: hidden;
   text-indent: -9999px;
