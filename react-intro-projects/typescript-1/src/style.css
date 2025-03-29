@@ -5,7 +5,7 @@
 
 body {
   background-color: #81a69b;
-  background-image: url(http://pets-images.dev-apis.com/pets/wallpaperB.jpg);
+  background-image: radial-gradient(#3a3a3a 30%, #121212 100%);
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
