@@ -11,7 +11,7 @@
     "lint": "eslint \"src/**/*.{ts,tsx,js,jsx}\" --quiet"
   },
   "keywords": [],
-  "author": "Brian Holt",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/react": "18.0.21",

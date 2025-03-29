@@ -1,5 +1,5 @@
 {
-  "author" : "Brian Holt",
+  "author" : "",
   "dependencies" : {
     "@tanstack/react-query" : "4.10.1",
     "react" : "18.2.0",
