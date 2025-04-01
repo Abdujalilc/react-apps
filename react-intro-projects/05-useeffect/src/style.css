@@ -22,7 +22,7 @@ body {
   width: 360px;
   margin: 0px 25px 0px 0px;
   padding: 35px 15px 15px 15px;
-  float: left;
+  /*float: left;*/
 }
 
 .search {
@@ -90,7 +90,7 @@ body {
 header > a,
 #root > div > h1 {
   display: inline-block;
-  background-image: url(../../adopt_me.png);
+  background-image: url(./logo.png);
   filter: brightness(150%);
   width: 353px;
   height: 76px;

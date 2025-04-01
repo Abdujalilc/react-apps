@@ -90,7 +90,7 @@ body {
 header > a,
 #root > div > h1 {
   display: inline-block;
-  background-image: url(../../adopt_me.png);
+  background-image: url(./logo.png);
   filter: brightness(150%);
   width: 353px;
   height: 76px;
